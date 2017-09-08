@@ -49,6 +49,7 @@ if (!$query_body) { die('Query ERROR: ' . mysql_error()); }
        }
 
 // Golova
+// Head
 $query_worker = mysql_query('SELECT * FROM shtat_worker WHERE code = 1');
 if (!$query_body) { die('Query ERROR: ' . mysql_error());  }
   while ($var = mysql_fetch_array($query_worker)) 
@@ -76,7 +77,7 @@ if (!$query_body) { die('Query ERROR: ' . mysql_error());  }
               </tr>";
       }
 
-// egg right
+// Assistant right
 $query_worker = mysql_query('SELECT * FROM shtat_worker WHERE code = 2');
 if (!$query_body) { die('Query ERROR: ' . mysql_error());  }
   while ($var = mysql_fetch_array($query_worker)) 
@@ -104,7 +105,7 @@ if (!$query_body) { die('Query ERROR: ' . mysql_error());  }
               </tr>";
       }    
 
-// egg left
+// Assistant left
 $query_worker = mysql_query('SELECT * FROM shtat_worker WHERE code = 3');
 if (!$query_body) { die('Query ERROR: ' . mysql_error());  }
   while ($var = mysql_fetch_array($query_worker)) 
